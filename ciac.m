@@ -171,16 +171,16 @@ fprintf('\n')
 %finding positions
 
 %%% onset of artifact
-pos1=find(ALLEEG(1).times==t1);
-pos2=find(ALLEEG(1).times==t2);
+pos1=min(find(ALLEEG(1).times>=t1)); 
+pos2=min(find(ALLEEG(1).times>=t2)); 
 
 %%% offset of artifact
-pos3=find(ALLEEG(1).times==t3);
-pos4=find(ALLEEG(1).times==t4);
+pos3=max(find(ALLEEG(1).times<=t3));
+pos4=max(find(ALLEEG(1).times<=t4));
 
 %%% N1-P2 time window AEP
-pos_in=find(ALLEEG(1).times==tin);
-pos_fin=find(ALLEEG(1).times==tfin);
+pos_in=min(find(ALLEEG(1).times>=tin));
+pos_fin=max(find(ALLEEG(1).times<=tfin));
 
 
 if Cz<1
