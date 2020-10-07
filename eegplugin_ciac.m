@@ -32,7 +32,7 @@
 
 function vers=eegplugin_ciac(fig, try_strings, catch_strings);
 
- vers = 'ciac1.01';
+ vers = 'ciac1.02';
     if nargin < 3
         error('eegplugin_ciac requires 3 arguments');
     end
