@@ -6,4 +6,6 @@ See documentation at [http://www.debener.de/CIAC_tutorial/ciacplugin.html](http:
 
 # Version history
 
+v1.02 - fix finding time boundaries
+
 v1.01 - fix blanked menu issue
